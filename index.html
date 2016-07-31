@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>企业网站布局</title>
+	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
+	<script type="text/javascript" src="js/setHomeSetFav.js" charset="gb2312"></script>
+	<script type="text/javascript" src="js/myfocus-2.0.1.min.js"></script>
+	<script type="text/javascript" src="js/mf-pattern/mF_YSlider.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/mf-pattern/mF_YSlider.css"/>
+
+	<script type="text/javascript">
+		myFocus.set({
+			id:'picBox'
+		})
+	</script>
+	<style type="text/css">
+		*{
+			margin: 0;padding: 0;
+			font-size: 12px;
+		}
+		body{background-color: #f5f5f5;}
+
+		.top{width: 100%;height: 27px;
+			background-image: url(../images/top_bg.jpg) reapeat-x;
+			border-bottom: 1px solid black;	
+		}
+		.top .top_content{width: 1000px;
+		margin:0 auto;	
+		}
+		.top_content li{ list-style-image: url(./images/li_bg.gif);
+						width:70px;line-height: 27px ;float: right;
+		}
+		.top_content a{text-decoration: none;}
+
+		.wrap{
+			width: 1000px;margin: 0 auto;
+		}
+
+		.logo{ height: 80px; background-color: #fff;}
+		.logo .logo_left{width: 200px; float: left;}
+		.logo .logo_right{width: 300px;height: 28px;margin-top: 30px; float: right;color: #8e8e8e;}
+		.logo_right img{vertical-align: middle;margin-right: 10px;}
+		.tel{font-family: "微软雅黑";font-size: 16px;color: #c00;}
+
+		.nav{width:1000px; height: 40px;}
+		.nav .nav_left{width: 10px;height: 40px; background: url(./images/nav_left.jpg) no-repeat; float: left;}
+		.nav .nav_mid{width: 980px;height: 40px;background: url(./images/nav_bg.jpg) repeat-x;float: left;}
+		.nav .nav_right{width: 10px;height: 40px;background: url(./images/nav_right.jpg) no-repeat;float: left;}
+
+		.nav_mid_left,.nav_mid_right{float: left;}
+		.nav_mid_left{width: 680px;}
+		.nav_mid_right{width: 300px;}
+		.nav_mid_left li{width: 100px; list-style-type: none;float: left;text-align: center;line-height: 40px;}
+		.nav_mid_left a{text-decoration: none;color: #fff;font-size: 16px;font-family: "微软雅黑"}
+		.nav_mid_left a:hover,.nav_mid_left a:active{text-decoration: none;color: #ff0;font-size: 16px;font-family: "微软雅黑"}
+
+		.search_text{width: 190px;height: 25px;margin-top: 5px;
+					background: url(./images/search.jpg) no-repeat right center;background-color: #fff;padding-right: 25px;
+					border:1px solid #fff;
+			 }
+
+
+		.ad{width: 1000px; height: 318px;overflow: hidden;}
+
+		.main{height: 250px;margin-top: 5px;
+			  background-color: #fff;}
+		.news{width: 340px;border:1px solid #E8E8E8;}
+		.course{width: 410px;border:1px solid #E8E8E8;margin: 0 7px;}
+		.sidebar{width: 230px;}
+		.news,.course,.sidebar{height: 250px;float: left;}
+
+		.title{height: 35px;border-bottom: 2px solid #E8E8E8;}
+		.title_left{width: 70%;font-family: "微软雅黑";font-size: 14px;font-weight: bold;color: #786F66;float: left;line-height: 35px;padding-left: 20px;}
+		.title_right{width: 20%;line-height: 35px;float: right;text-align: right;padding-right: 10px;}
+		.title_right a{text-decoration: none;color: #999}
+
+		.pic_news{height: 80px;margin-top: 10px;line-height: 22px;}
+		.pic_news img,.course_pic img{float: left;margin: 0 5px;}
+		.pic_news a{text-decoration: none;color:#c00;}
+
+		.news_list{margin-top: 20px;}
+		.news_list li{list-style-type: none;background: url(./images/list.jpg) no-repeat;padding-left: 20px;margin: 8px;border-bottom: 1px dotted #CCC;}
+		.news_list a:link,.news_list a:visited{text-decoration: none;color: #000;}
+		.news_list a:hover,.news_list a:active{text-decoration: none;color: #F00;}
+		.date{color: #999;float: right;}
+
+		.course_pic{height: 120px;margin-top: 10px;line-height: 22px;}
+		.course_type{height: 37px;width: 372px;background: url(./images/product_type_bg.jpg) no-repeat;margin: 20px 0;}
+		.course_type li{list-style-type: none;float: left;line-height: 37px;margin: 0 15px;}
+		.video{height: 185px;border:1px solid #E8E8E8;}
+		.video_content{height: 150px;}
+		.sidebar_ad{height: 55px;border: 1px solid #E8E8E8;margin-top: 10px;}
+		
+		.copyright{width: 100%;height: 200px;background-color: #E8E8E8;margin-top: 10px;}
+		.copyright_content{width: 1000px;margin: 0 auto;padding-top: 20px;}
+		.copyright_content li{list-style-type: none;float: left;width: 200px;background: url(./images/line.png) no-repeat right center;text-align: center;line-height: 30px;font-family: "微软雅黑"}
+		.copyright_content a{text-decoration: none;color: #999;font-size: 18px;}
+		.copyright_content li ul li a{font-size: 14px;}
+
+
+	</style>
+</head>
+<body>
+<div class="top">
+	<div class="top_content">
+		<ul>
+			<li><a href="#">联系我们</a></li>
+			<li><a href="#">加入收藏</a></li>
+			<li><a href="#" onclick="SetHome(window.location)">设为首页</a></li>
+		</ul>
+	</div>
+</div>
+
+<div class="wrap">
+	<div class="logo">
+		<div class="logo_left">
+			<img src="images/logo.jpg" alt="logo图片"/>
+		</div>
+		<div class="logo_right">
+			<img src="images/tel.jpg" alt="服务热线"/>24小时服务热线： <span class="tel">8888 8888</span> 
+		</div>
+	</div>
+	<div style="clear:both;"></div>
+
+	<div class="nav">
+		<div class="nav_left"></div>
+		<div class="nav_mid">
+			<div class="nav_mid_left">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">关于慕课</a></li>
+					<li><a href="#">新闻动态</a></li>
+					<li><a href="#">课程中心</a></li>
+					<li><a href="#">在线课程</a></li>
+					<li><a href="#">人才市场</a></li>
+				</ul>
+			</div>
+			<div class="nav_mid_right">
+				<form action="" method="post">
+					<input type="text" name="" class="search_text">
+				</form>
+			</div>
+		</div>
+		<div class="nav_right"></div>
+	</div>
+
+	<div class="ad" id="picBox">
+		<div class="loading"><img src="./images/loading.gif" alt="图片加载中"></div>
+		<div class="pic">
+			<ul>
+				<li><img src="images/ad2.jpg"></li>
+				<li><img src="images/ad3.jpg"></li>
+				<li><img src="images/ad4.jpg"></li>
+			</ul>
+		</div>
+	</div> <!-- ad结束 -->
+
+	<div class="main">
+		<div class="news">
+			<div class="title">
+				<h2 class="title_left">新闻中心</h2><span class="title_right"><a href="news.html">More&gt;&gt;</a></span>
+			</div>
+			<div class="pic_news">
+				<img src="images/news.jpg"/><h2><a href="#">520 美女喊你来表白!</a></h2><p>活动时间：5月20日——5月25日<br/>获奖公布时间：5月26日<br/><a href="#">Lern More&gt;&gt;</a></p>
+			</div>
+			<div class="news_list">
+				<ul>
+					<li><a href="#">【慕课访谈】</a><span class="date">2016-06-01</span> </li>
+					<li><a href="#">【有奖活动】</a><span class="date">2016-06-01</span></li>
+					<li><a href="#">【程序猿工资】</a><span class="date">2016-06-01</span></li>
+					<li><a href="#" title="aa">【慕课访谈】</a><span class="date">2016-06-01</span></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="course">
+			<div class="title">
+				<h2 class="title_left">课程中心</h2><span class="title_right"><a href="news.html">More&gt;&gt;</a></span>
+			</div>
+			<div class="course_pic"><img src="images/css.jpg"><h2>CSS圆角进化论</h2> <p>CSS圆角的实现，经历了三大发展阶段：背景图片方式、CSS2.0+HTML标签模拟、CSS3.0圆角属性）。本案例详细讲解每一种的实现方式，并对实现的优缺点进行对比分析。</p>
+			</div>
+			<div class="course_type">
+				<ul>
+					<li>PHP开发</li>
+					<li>前端开发</li>
+					<li>JAVA开发</li>
+					<li>Android开发</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="sidebar">
+			<div class="video">
+				<div class="title"><h2 class="title_left">媒体聚焦</h2>	</div>
+				<div class="video_content">
+					<embed src="http://player.youku.com/player.php/sid/XNzUzMTY2NjAw/v.swf" allowFullScreen="true" quality="high" width="225" height="140" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+				</div>
+			</div>
+			<div class="sidebar_ad">
+				<img src="images/app.jpg"/>
+			</div>
+		</div>
+	</div> <!-- main结束 -->
+
+
+</div> <!-- wrap结束 -->
+
+<div class="copyright">
+	<div class="copyright_content">
+		<ul>
+			<li>
+				<a href="#">关于</a>
+				<ul>
+					<li><a href="#">关于</a></li>
+					<li><a href="#">课程</a></li>
+					<li><a href="#">留言</a></li>
+					<li><a href="#">关注</a></li>
+					<li><a href="#">你好</a></li>
+				</ul>
+			</li>
+			<li><a href="#">课程</a>
+				<ul>
+					<li><a href="#">关于</a></li>
+					<li><a href="#">课程</a></li>
+					<li><a href="#">留言</a></li>
+					<li><a href="#">关注</a></li>
+					<li><a href="#">你好</a></li>
+				</ul>
+			</li>
+			<li><a href="#">留言</a>
+			<ul>
+					<li><a href="#">关于</a></li>
+					<li><a href="#">课程</a></li>
+					<li><a href="#">留言</a></li>
+					<li><a href="#">关注</a></li>
+					<li><a href="#">你好</a></li>
+				</ul>
+			</li>
+			<li><a href="#">关注</a>
+				<ul>
+					<li><a href="#">关于</a></li>
+					<li><a href="#">课程</a></li>
+					<li><a href="#">留言</a></li>
+					<li><a href="#">关注</a></li>
+					<li><a href="#">你好</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><img src="images/weixin.png"> 微信关注</a>
+				<img src="">
+			</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>
